@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 export PATH="$PATH:/root/.local/bin"
+export PYTHONPATH="$PYTHONPATH:/root/.local/lib/python3.7/site-packages"
 which -a bandit
 which -a semgrep
 semgrep --version
