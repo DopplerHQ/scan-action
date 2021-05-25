@@ -6,7 +6,8 @@ whoami
 echo "PWD: $PWD"
 which -a bandit
 ls -la /root/.local/bin/bandit
-ln -s /bin/bandit /root/.local/bin/bandit
+ln -s /root/.local/bin/bandit /bin/bandit
+which -a bandit
 ls -la /
 echo "
 config_version: 1
