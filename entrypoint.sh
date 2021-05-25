@@ -1,16 +1,9 @@
 #!/bin/sh -l
 
-echo "In entrypoint"
-echo "USER: $USER"
-whoami
-echo "PWD: $PWD"
-export PATH="$PATH:/root/.local/bin/"
-which -a bandit
-ls -la /root/.local/bin/bandit
-ln -s /root/.local/bin/bandit /bin/bandit
+export PATH="$PATH:/root/.local/bin"
 which -a bandit
 which -a semgrep
-ls -la /
+semgrep --version
 echo "
 config_version: 1
 active_scanners: $INPUT_ACTIVE_SCANNERS
