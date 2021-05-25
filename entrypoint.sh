@@ -3,6 +3,8 @@
 echo "In entrypoint"
 echo "USER: $USER"
 echo "PWD: $PWD"
+which -a bandit
+ls -la /root/.local/bin/bandit
 ls -la /
 echo "
 config_version: 1
