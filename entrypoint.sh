@@ -2,9 +2,11 @@
 
 echo "In entrypoint"
 echo "USER: $USER"
+whoami
 echo "PWD: $PWD"
 which -a bandit
 ls -la /root/.local/bin/bandit
+ln -s /bin/bandit /root/.local/bin/bandit
 ls -la /
 echo "
 config_version: 1
