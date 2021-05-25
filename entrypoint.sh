@@ -1,5 +1,9 @@
 #!/bin/sh -l
 
+echo "In entrypoint"
+echo "USER: $USER"
+echo "PWD: $PWD"
+ls -la /
 echo "
 config_version: 1
 active_scanners: $INPUT_ACTIVE_SCANNERS
