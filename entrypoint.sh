@@ -4,10 +4,12 @@ echo "In entrypoint"
 echo "USER: $USER"
 whoami
 echo "PWD: $PWD"
+export PATH="$PATH:/root/.local/bin/"
 which -a bandit
 ls -la /root/.local/bin/bandit
 ln -s /root/.local/bin/bandit /bin/bandit
 which -a bandit
+which -a semgrep
 ls -la /
 echo "
 config_version: 1
