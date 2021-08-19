@@ -1,4 +1,4 @@
-FROM coinbase/salus:latest
+FROM doppleruniversity/salus:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
