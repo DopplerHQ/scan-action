@@ -1,4 +1,4 @@
-FROM doppleruniversity/salus:latest
+FROM ghcr.io/dopplerhq/salus:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
